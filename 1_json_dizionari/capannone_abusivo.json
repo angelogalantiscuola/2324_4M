@@ -1,0 +1,83 @@
+{
+    "Container": [
+        {
+            "Numero Container": "La Perla Nera",
+            "elenco_merci": [
+                {
+                    "Merce": "Animali Esotici",
+                    "Provenienza": "Brasile",
+                    "Quantita": 4,
+                    "Peso": 100,
+                    "Data arrivo": "2023-10-05",
+                    "Dettagli": [
+                        "Capybara",
+                        "Coccodrillo delle Amazzoni",
+                        "Caimano",
+                        "Tucano"
+                    ],
+                    "Dimensioni": {
+                        "Larghezza": 20,
+                        "Altezza": 30,
+                        "Profondita": 20
+                    }
+                },
+                {
+                    "Merce": "Barile di polvere da sparo",
+                    "Provenienza": "Kazakistan",
+                    "Quantita": 15,
+                    "Peso": 30,
+                    "Data arrivo": "2023-12-07",
+                    "Dettagli": [
+                        "Raffinata",
+                        "Nera"
+                    ],
+                    "Dimensioni": {
+                        "Larghezza": 10,
+                        "Altezza": 20,
+                        "Profondita": 10
+                    }
+                }
+            ]
+        },
+        {
+            "Numero Container": "L'Onlandese Volante",
+            "elenco_merci": [
+                {
+                    "Merce": "Fuochi d'artificio",
+                    "Provenienza": "Marocco",
+                    "Quantita": 205,
+                    "Peso": 15,
+                    "Data arrivo": "2024-01-01",
+                    "Dettagli": [
+                        "Stella Rossa",
+                        "Sfera Verde",
+                        "Sfera Multicolore"
+                    ],
+                    "Dimensioni": {
+                        "Larghezza": 10,
+                        "Altezza": 20,
+                        "Profondita": 10
+                    }
+                },
+                {
+                    "Merce": "Materiali per indumenti",
+                    "Provenienza": "Libano",
+                    "Quantita": 1300,
+                    "Peso": 3,
+                    "Data arrivo": "2024-05-04",
+                    "Dettagli": [
+                        "Cotone",
+                        "Lana",
+                        "Nylon",
+                        "Pelle di Cincilla"
+                    ],
+                    "Dimensioni": {
+                        "Larghezza": 100,
+                        "Altezza": 200,
+                        "Profondita": 400
+                    }
+                }
+            ]
+        }
+    ]
+}
