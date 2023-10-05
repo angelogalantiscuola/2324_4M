@@ -1,7 +1,7 @@
 import json
 
 # Apro il file JSON e carico il dizionario
-with open('es1.json', 'r') as file:
+with open('es004.json', 'r') as file:
     data = json.load(file)
 
 # Stampo le chiavi
