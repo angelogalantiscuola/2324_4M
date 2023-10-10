@@ -1,4 +1,5 @@
-#Baffert Alexander
+#Esercizio 2, il programma richiedere all'utente di inserire i dati di n automobili, 
+#poi di aggiungere tali dati in una lista di dizionari e infine salvare la lista in un file JSON
 import json
 import numpy as np
 n=np.array([])
