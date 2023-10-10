@@ -1,0 +1,22 @@
+{
+    "nome": "Museo di Roma",
+    "stanze": [
+    {
+            "nome": "Rinascimento", 
+            "opere": 
+            [
+                {"titolo": "La creazione di Adamo", "artista": "Michelangelo", "anno": 1512},
+                {"titolo": "La nascita di Venere", "artista": "Botticelli", "anno": 1485},
+                {"titolo": "La Gioconda", "artista": "Leonardo da Vinci", "anno": 1503}
+            ]
+        },
+        {
+            "nome": "Impressionisti",
+            "opere": [
+                {"titolo": "La notte stellata", "artista": "Van Gogh", "anno": 1889},
+                {"titolo": "La camera da letto", "artista": "Van Gogh", "anno": 1889},
+                {"titolo": "La grande onda di Kanagawa", "artista": "Hokusai", "anno": 1830}
+            ]
+        }
+    ]
+}
