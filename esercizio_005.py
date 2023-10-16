@@ -4,8 +4,6 @@ import json
 with open("museo.json", "r") as file_json:
     mydict = json.loads(file_json.read())
 
-import json
-
 # Inizializza il museo come un dizionario vuoto
 museo = {"stanze": {}, "opere": {}}
 
