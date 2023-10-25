@@ -3,6 +3,11 @@
 ## link a Repository con esempi
 https://github.com/angelogalantiscuola/IT
 
+## PlantUML
+- sintassi per il [diagramma delle classi](https://plantuml.com/class-diagram) con plantUML
+- [editor](http://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000) per plantuml
+- si puo installare anche un estensione direttamente in vscode (la prossima volta lo facciamo)
+
 ## Remote VSCode coding
 - Connettersi con VSCode tramite il protocollo SSH ad una macchina remota:
 [Remote VSCode Coding](https://docs.google.com/document/d/1Hj421cgJWSpHDKt7EvSvzY98OCbt7lCXVqEd5uTHEic/edit?usp=sharing)
