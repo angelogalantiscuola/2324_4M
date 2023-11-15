@@ -1,0 +1,18 @@
+@startuml
+class conto{
+id_conto : string
+intestatario : string
+iban : string
+saldo_disponibile : float
+patrimonio_investito : float
+--
+constructor(id_conto, intestatario, iban, saldo_disponibile)
+tostring():string
+--
+deposito(importo : float):void
+prelievo(importo : float):bool
+investi (importo : float):bool
+disinvesti(importo : float):void
+get_patrimonio_totale():float
+}
+@enduml
