@@ -17,6 +17,7 @@ https://github.com/angelogalantiscuola/IT
 [Sync a repository with Github](https://docs.google.com/document/d/1VSPMp390ovSXxyrg4O-Z2Uw_wgZ9vl-5woab78Ub05A/edit?usp=sharing)
 ## Esercizi
 1.[Json](https://github.com/angelogalantiscuola/2324_4M/tree/main/1_json_dizionari)
+
 2.[CLassi](https://github.com/angelogalantiscuola/2324_4M/tree/main/2_classi)
 ## Python Dictionary 
 1.[Creazione DIzionario e Salvataggio su file Json](https://github.com/angelogalantiscuola/2324_4M/blob/3b08396c771f7f3818d1fe725b64fc011049b71e/esercizio_001.py)
