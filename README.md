@@ -24,3 +24,5 @@ https://github.com/angelogalantiscuola/IT
 3.[Lettura Lista Es 2 E Calcolo Bollo  E Età Media Autoveicoli](https://github.com/angelogalantiscuola/2324_4M/blob/a34f071156598069097056e10a463ab9f51a01ae/esercizio_003.py.py)
 
 4.[Lettura File Json Es 2 E Stampa A Schermo Con I Metodi Keys(), Values() E Items().](https://github.com/angelogalantiscuola/2324_4M/blob/b3642133274d422ca4acbd838ac9dd2f155b60bb/2_json_dizionari/esecizio_004.py)
+
+5.[Creazione di una Classe.](https://github.com/angelogalantiscuola/2324_4M/blob/main/2_classi/esercizio_007.py)
