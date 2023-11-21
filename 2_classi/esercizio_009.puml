@@ -1,0 +1,18 @@
+@startuml
+
+class Ascensore{
+  id_intero : int
+  piano_attuale : int
+  ultimo_piano : int
+  primo_piano : int
+  capienza_max : int
+  peso_max : float
+  --
+  constructor(id_intero,piano_attuale ,ultimo_piano ,primo_piano,capienza_max,peso_max)
+  --
+  prenota()
+  sali()
+  scendi()
+}
+
+@enduml
