@@ -1,0 +1,35 @@
+@startuml
+Book <|-- Novel
+Novel <|-- ScienceFiction
+Novel <|-- Fantasy
+class Book{
+   title: str
+   author: str
+   bookmark: int
+   --
+   constructor(title, author, bookmark): void
+   bookmark_page(): void
+   __str__(): str
+}
+class Novel{
+   genre: str
+   --
+   constructor(title, author, genre): void
+   get_genre(): str
+   __str__(): str
+}
+class ScienceFiction{
+   futuristic_tech: str
+   --
+   constructor(title, author, genre, futuristic_tech): void
+   get_futuristic_tech(): str
+   __str__(): str
+}
+class Fantasy{
+   magic_system: str
+   --
+   constructor(title, author, genre, magic_system): void
+   get_magic_system(): str
+   __str__(): str
+}
+@enduml
