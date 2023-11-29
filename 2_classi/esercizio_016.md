@@ -1,3 +1,5 @@
+# Streaming Service
+
 1. We have a `User` who can subscribe to a service. The `User` has a `username`, `email`, and can also create multiple `Playlists`.
 
 2. There's an `Artist` who can create multiple `Albums`. The `Artist` has a `name`.
