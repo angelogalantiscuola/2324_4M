@@ -18,7 +18,7 @@ Similarly, a Person is not limited to driving just one Car. They have the freedo
 
 ## UML version
 
-```plantuml
+``` plantuml
 @startuml example
 
 class Person {
