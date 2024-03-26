@@ -1,0 +1,24 @@
+@startuml Garage
+
+class Garage {
+    - nome: String
+    - postiAutoDisponibili: Integer
+    + visualizzaPostiAutoDisponibili(): Integer
+}
+
+class Cliente {
+    - nome: String
+    - cognome: String
+    + visualizzaNomeCognome(): String
+}
+
+class Auto {
+    - targa: String
+    - modello: String
+    + visualizzaTargaModello(): String
+}
+
+Cliente "1" -- "many" Auto : possiede
+Garage "1" -- "many" Auto : contiene
+
+@enduml

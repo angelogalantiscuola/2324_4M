@@ -1,0 +1,26 @@
+@startuml Garage
+
+entity "Garage" as garage {
+    * id : integer
+    --
+    * nome : string
+    * postiAutoDisponibili : integer
+}
+
+entity "Cliente" as cliente {
+    * id : integer
+    --
+    * nome : string
+    * cognome : string
+}
+
+entity "Auto" as auto {
+    * targa : string
+    --
+    * modello : string
+}
+
+garage ||--o{ auto : contiene
+cliente ||--o{ auto : possiede
+
+@enduml
