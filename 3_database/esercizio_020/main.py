@@ -14,7 +14,12 @@ def create_db_and_tables(engine):
 
 
 def main():
-    db_name = "garage.db"
+
+# Get the directory of the current script file
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Create the full path for the database file
+    db_name = os.path.join(current_dir, "garage.db")
     verbose = False
     delete_database = True
     if delete_database:
