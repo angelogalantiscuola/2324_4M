@@ -1,7 +1,11 @@
-#Leggere il file es1.json contenente un dizionario e stampare a video le chiavi, i valori e la coppia chiavi-valori rispettivamente con i metodi keys(), values() e items().
-#N.B
-#1) Il programma dovrebbe funzionare a prescindere dal numero di coppie chiave-valore contenute nel dizionario. 
-#2) Il formato dell'output dovrebbe essere simile allo screenshot allegato
+"""
+
+Leggere il file es1.json contenente un dizionario e stampare a video le chiavi, i valori e la coppia chiavi-valori rispettivamente con i metodi keys(), values() e items().
+N.B
+1) Il programma dovrebbe funzionare a prescindere dal numero di coppie chiave-valore contenute nel dizionario. 
+2) Il formato dell'output dovrebbe essere simile allo screenshot allegato
+
+"""
 
 import json
 

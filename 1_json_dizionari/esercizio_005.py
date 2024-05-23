@@ -1,36 +1,21 @@
-# Realizzare un applicativo che permetta, mediante l'uso di dizionari, 
-# liste e file JSON, la gestione del catalogo di un museo.
+"""
 
-# In particolare, l'applicativo dovrà permettere di:
-# 4) Consultare le stanze presenti
-# 5) Cercare le informazioni su un opera
-# 6) Cancellare un opera
-# 7) Cancellare una stanza solo se vuota
- 
-# NB 
-# - Ad ogni cambiamento, aggiornare il file JSON che garantisce la persistenza. 
-# - Realizzare un menù numerato con le varie funzionalità elencate in precedenza.
+Realizzare un applicativo che permetta, mediante l'uso di dizionari, 
+liste e file JSON, la gestione del catalogo di un museo.
+
+In particolare, l'applicativo dovrà permettere di:
+4) Consultare le stanze presenti
+5) Cercare le informazioni su un opera
+6) Cancellare un opera
+7) Cancellare una stanza solo se vuota
+
+NB 
+- Ad ogni cambiamento, aggiornare il file JSON che garantisce la persistenza. 
+- Realizzare un menù numerato con le varie funzionalità elencate in precedenza.
+
+"""
 
 import json
-
-# - Progettare la struttura dati a priori in modo da garantire le funzionalità richieste.
-# museo = {
-#     "nome": "Museo di Roma",
-#     "stanze": [],
-# }
-
-# stanza = {
-#     "nome": "Rinascimento",
-#     "opere": [],
-# }
-
-# opera = {
-#     "titolo": "La creazione di Adamo",
-#     "artista": "Michelangelo",
-#     "anno": 1512,
-# }
-
-
 
 # 1) Creare una nuova stanza
 def crea_stanza(museo: dict):
