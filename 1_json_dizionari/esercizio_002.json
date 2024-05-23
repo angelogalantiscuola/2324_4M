@@ -1,1 +1,14 @@
-[{"marca": "ford", "modello": "galaxy", "anno": 2017, "potenza": 160}, {"marca": "audi", "modello": "r6", "anno": 2015, "potenza": 600}]
+[
+    {
+        "marca": "ford",
+        "modello": "galaxy",
+        "anno": 2017,
+        "potenza": 160
+    },
+    {
+        "marca": "audi",
+        "modello": "r6",
+        "anno": 2015,
+        "potenza": 600
+    }
+]
