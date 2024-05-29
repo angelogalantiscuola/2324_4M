@@ -1,18 +1,3 @@
-"""
-This is a simple streaming service example.
-It contains the following classes:
-- Song
-- Album
-- PremiumAlbum
-- Playlist
-- Subscription
-- User
-- Artist
-
-It also contains a function that creates the objects and returns them.
-"""
-
-
 class Song:
     def __init__(self, title: str, duration: int):
         self.title = title

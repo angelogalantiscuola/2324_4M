@@ -1,52 +1,80 @@
-#creation book base class
+#Classe Book
 class Book:
-    #creation attributes 
-    def __init__(self, title, author, bookmark=0):
-        self.title = title
-        self.author = author
-        self.bookmark = bookmark
-    #creation methods bookmark_page
-    def bookmark_page(self):
-        print("Bookmarking page", self.bookmark)
-    #creation method that represents the string format
-    def __str__(self):
-        return f"Title: {self.title}\nAuthor: {self.author}"
+    def __init__(self, titolo, autore):
+        self.titolo = titolo
+        self.autore = autore
 
-#creation novel class
+    def leggi(self):
+        print(f"Inizi a leggere {self.titolo}.")
+
+    def segna_pagina(self, numero_pagina):
+        print(f"Pagina {numero_pagina} segnata in {self.titolo}.")
+
+    def descrivi(self):
+        print(f"Titolo: {self.titolo}\nAutore: {self.autore}")
+
+#Classe Novel
 class Novel(Book):
-    #creation new attributes
-    def __init__(self, title, author, genre):
-        super().__init__(title, author)
-        self.genre = genre
-    #creation methods get_genre
-    def get_genre(self):
-        return self.genre
-    #creation method that represents the string format
-    def __str__(self):
-        return f"{super().__str__()}\nGenre: {self.genre}"
+    def __init__(self, titolo, autore, genere):
+        super().__init__(titolo, autore)
+        self.genere = genere
 
-#creation scienze fiction class
+    def ottieni_genere(self):
+        return self.genere
+
+    def descrivi(self):
+        super().descrivi()
+        print(f"Genere: {self.genere}")
+
+#Classe ScienceFiction
 class ScienceFiction(Novel):
-    #creation new attributes
-    def __init__(self, title, author, genre, futuristic_tech):
-        super().__init__(title, author, genre)
-        self.futuristic_tech = futuristic_tech
-    #creation methods get_futuristic_tech
-    def get_futuristic_tech(self):
-        return self.futuristic_tech
-    #creation method that represents the string format
-    def __str__(self):
-        return f"{super().__str__()}\nFuturistic Technology: {self.futuristic_tech}"
+    def __init__(self, titolo, autore, genere, tecnologia_futuristica):
+        super().__init__(titolo, autore, genere)
+        self.tecnologia_futuristica = tecnologia_futuristica
 
-#creation fantasy class
+    def ottieni_tecnologia_futuristica(self):
+        return self.tecnologia_futuristica
+
+    def descrivi(self):
+        super().descrivi()
+
+#Classe Fantasy
 class Fantasy(Novel):
-    #creation new attributes
-    def __init__(self, title, author, genre, magic_system):
-        super().__init__(title, author, genre)
-        self.magic_system = magic_system
-    #creation methods get_magic_system
-    def get_magic_system(self):
-        return self.magic_system
-    #creation method that represents the string format
-    def __str__(self):
-        return f"{super().__str__()}\nMagic System: {self.magic_system}"
+    def __init__(self, titolo, autore, genere, sistema_magico):
+        super().__init__(titolo, autore, genere)
+        self.sistema_magico = sistema_magico
+
+    def ottieni_sistema_magico(self):
+        return self.sistema_magico
+
+    def descrivi(self):
+        super().descrivi()
+
+# Creazione e utilizzo di oggetti delle varie classi
+Book = Book("Veri Amici", "I Mates")
+Book.leggi()
+Book.segna_pagina(100)
+Book.descrivi()
+
+Novel = Novel("1984", "George Orwell", "Political fiction novel")
+print("\ndescrizione del Romanzo:")
+Novel.leggi()
+Novel.segna_pagina(100)
+Novel.descrivi()
+print(f"Genere: {Novel.ottieni_genere()}") 
+
+ScienceFiction = ScienceFiction("Akira", "Katsuhiro Otomo", "Dystopian", "Weapons")
+print("\ndescrizione Fantascienza:")
+ScienceFiction.leggi()
+ScienceFiction.segna_pagina(100)
+ScienceFiction.descrivi()
+print(f"Genere: {ScienceFiction.ottieni_genere()}") 
+print(f"Tecnologia Futuristica: {ScienceFiction.ottieni_tecnologia_futuristica()}")
+
+fantasy = Fantasy("Il Trono di Spade", "George R. R. Martin", "Fantasy", "Dragons")
+print("\ndescrizione Fantasy:")
+fantasy.leggi()
+fantasy.segna_pagina(100)
+fantasy.descrivi()
+print(f"Genere: {fantasy.ottieni_genere()}") 
+print(f"Sistema Magico: {fantasy.ottieni_sistema_magico()}")

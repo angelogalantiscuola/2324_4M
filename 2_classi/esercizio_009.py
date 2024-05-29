@@ -7,20 +7,31 @@ class Ascensore:
         self.capienza_max=capienza_max
         self.peso_max=peso_max
         self.n_persone=n_persone
+    
     def prenota(self):
         pren_piano=int(input(f"Inserisci il piano voluto:\n"))
+
+        # Verifica se il numero di persone attuali è inferiore o uguale alla capienza massima
         if self.n_persone<=self.capienza_max:
+
+             # Se il piano inserito è superiore al piano attuale
             if pren_piano>self.piano_attuale:
                 diff=pren_piano-self.piano_attuale
                 self.piano_attuale=self.piano_attuale+diff
                 print(f"Il piano attuale e'{self.piano_attuale}")
+
+            # Se il piano inserito è uguale al piano attuale
             elif pren_piano==self.piano_attuale:
                 print("Piano inserito è il piano attuale")
+
+            # Se il piano inserito è inferiore al piano attuale
             else:
                 diff=self.piano_attuale-pren_piano
                 self.piano_attuale=self.piano_attuale-diff
                 print(f"Il piano attuale e'{self.piano_attuale}")
         else:
             print("Si è superata la capienza massima e l'ascensore non funzionerà finchè non si libereranno dei posti")
+
+
 ascensore1=Ascensore("10f",3,6,1,6,200,5)
 ascensore1.prenota()
