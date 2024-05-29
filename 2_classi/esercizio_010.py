@@ -1,12 +1,3 @@
-# The task is to create a Person class and two classes that inherit from it: Student and Teacher.
-
-# In this exercise, Person is the main class and Student and Teacher are subclasses that inherit from Person.
-# The introduce method is overridden in the subclasses to provide different introductions for students and teachers.
-
-# def introduce(): # function
-#     print(f"Hi my name is Pippo and I am 30 years old.")
-# introduce() # Call the introduce function.
-
 class Person:
     def __init__(self, name, age):
         self.name = name # attribute
