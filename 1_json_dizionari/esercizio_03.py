@@ -7,20 +7,21 @@ crea un programma che legga la lista contenuta nel file JSON creato nel preceden
 """
 import json
 
+# Funzione per calcolare la tassa in base alla potenza in kW
+def calcola_bollo(potenza_kw):
+    if potenza_kw <= 100:
+        tassa = potenza_kw * 2.58
+    else:
+        tassa = 100 * 2.58 + (potenza_kw - 100) * 3.87 
+    return round(tassa, 2)
+
+# Funzione per calcolare l'età dell'auto in base all'anno di produzione
+def calcola_eta(anno_produzione):
+    anno_corrente = 2023
+    return anno_corrente - anno_produzione
+
+
 def main():
-    # Funzione per calcolare la tassa in base alla potenza in kW
-    def calcola_bollo(potenza_kw):
-        if potenza_kw <= 100:
-            tassa = potenza_kw * 2.58
-        else:
-            tassa = 100 * 2.58 + (potenza_kw - 100) * 3.87 
-        return round(tassa, 2)
-
-    # Funzione per calcolare l'età dell'auto in base all'anno di produzione
-    def calcola_eta(anno_produzione):
-        anno_corrente = 2023
-        return anno_corrente - anno_produzione
-
     # Carica i dati delle auto dal file JSON
     with open("auto.json", "r") as file:
         auto = json.load(file)

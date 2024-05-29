@@ -1,0 +1,14 @@
+[
+    {
+        "Marca": "Ferrari",
+        "Modello": "488 GTB",
+        "Anno di produzione": 2015,
+        "Potenza": 670
+    },
+    {
+        "Marca": "Lamborghini",
+        "Modello": "Huracan",
+        "Anno di produzione": 2014,
+        "Potenza": 610
+    }
+]

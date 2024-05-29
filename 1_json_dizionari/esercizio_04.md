@@ -1,6 +1,6 @@
 # Esercizio: Analisi e Visualizzazione dei Dati JSON
 
-In questo esercizio, il tuo compito è analizzare un file JSON e visualizzare il suo contenuto. Il file JSON, chiamato 'esercizio_004.json', contiene un dizionario. Sei tenuto a visualizzare le chiavi, i valori e le coppie chiave-valore di questo dizionario. Per fare ciò, dovresti utilizzare i metodi `keys()`, `values()`, e `items()` rispettivamente.
+In questo esercizio, il tuo compito è analizzare un file JSON e visualizzare il suo contenuto. Il file JSON, chiamato `esercizio_004.json`, contiene un dizionario. Sei tenuto a visualizzare le chiavi, i valori e le coppie chiave-valore di questo dizionario. Per fare ciò, dovresti utilizzare i metodi `keys()`, `values()`, e `items()` rispettivamente.
 
 **Attenzione:**
 1. Il tuo programma dovrebbe essere progettato per gestire dizionari con qualsiasi numero di coppie chiave-valore.
