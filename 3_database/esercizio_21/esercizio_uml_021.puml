@@ -1,0 +1,26 @@
+@startuml es21
+
+class Negozio {
+    - nome: String
+    - numeroAlbum: Integer
+    + visualizzaAlbum(): void
+}
+
+class Cliente {
+    - nome: String
+    - cognome: String
+    + visualizzaNomeCompleto(): String
+}
+
+class Album {
+    - titolo: String
+    - artista: String
+    - codice_un_prodotto: String
+    + visualizzaDettagliAlbum(): String
+}
+
+Negozio "N" -- "N" Cliente : ha
+Album "N" -- "1" Negozio : contiene
+Cliente "N" -- "1" Album : acquista
+
+@enduml
