@@ -1,0 +1,29 @@
+@startuml esercizio_22
+class Show {
+    +id: int
+    +nome: str
+    +location: str
+}
+class Partecipante {
+    +id: int
+    +nome: str
+    +cognome: str
+    +visualizza_nome_cognome(): str
+}
+class Giudice {
+    +id: int
+    +nome: str
+    +cognome: str
+    +eta: int
+}
+
+class PartecipanteShowLink {
+    +partecipante_id: int
+    +show_id: int
+}
+
+Show "1" *-- "*" PartecipanteShowLink
+Partecipante "1" *-- "*" PartecipanteShowLink
+Giudice "1" -- "1" Show
+
+@enduml
